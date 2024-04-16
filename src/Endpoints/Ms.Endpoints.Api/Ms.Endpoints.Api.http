@@ -1,0 +1,6 @@
+@Ms.Endpoints.Api_HostAddress = http://localhost:5262
+
+GET {{Ms.Endpoints.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
