@@ -4,13 +4,17 @@ public class Person
 {
     private Person()
     {
-        
+
     }
-    public Person(string firsName, string lastName, List<PhoneNumber> phoneNumbers)
+    public Person(string firsName, string lastName, PhoneNumber phoneNumbers)
     {
         FirsName = firsName ?? throw new ArgumentNullException(nameof(firsName));
         LastName = lastName ?? throw new ArgumentNullException(nameof(lastName));
-        PhoneNumbers = phoneNumbers ?? throw new ArgumentNullException(nameof(phoneNumbers));
+        if (string.IsNullOrWhiteSpace(phoneNumbers.Number))
+        {
+            throw new ArgumentNullException(nameof(phoneNumbers));
+        }
+        PhoneNumbers.Add(phoneNumbers);
     }
     public int Id { get; set; }
     public string FirsName { get; set; }
