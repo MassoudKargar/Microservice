@@ -7,11 +7,26 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.Core", "1.Core", "{486608
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.Infrastructure", "2.Infrastructure", "{47BC002D-0194-4132-8B30-EE4D1D4F4C35}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NewFolder1", "NewFolder1", "{F774D3AE-63D8-4EAA-9149-5AD50F1F3C4D}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3.Endpoints", "3.Endpoints", "{F774D3AE-63D8-4EAA-9149-5AD50F1F3C4D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ms.Core.Domain", "src\Core\Ms.Core.Domain\Ms.Core.Domain.csproj", "{A0542596-38D2-48EA-8957-E202B69FCDB2}"
 EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A0542596-38D2-48EA-8957-E202B69FCDB2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0542596-38D2-48EA-8957-E202B69FCDB2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A0542596-38D2-48EA-8957-E202B69FCDB2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A0542596-38D2-48EA-8957-E202B69FCDB2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A0542596-38D2-48EA-8957-E202B69FCDB2} = {486608A5-B3C1-47E1-8687-E007D7848A83}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {28EC57B7-6CF9-4171-9EC2-091ADFE2998B}
