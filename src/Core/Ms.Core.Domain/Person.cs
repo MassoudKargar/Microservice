@@ -16,4 +16,12 @@ public class Person
     public string FirsName { get; set; }
     public string LastName { get; set; }
     public List<PhoneNumber> PhoneNumbers { get; set; } = new();
+    public void AddPhoneNumber(PhoneNumber phoneNumber)
+    {
+        if (PhoneNumbers.Any(c => c.Number == phoneNumber.Number))
+        {
+            throw new InvalidDataException("PhoneNumber is Duplicate");
+        }
+        PhoneNumbers.Add(phoneNumber);
+    }
 }
