@@ -13,13 +13,16 @@ public class PersonApplicationService(IPersonRepository personRepository)
         PersonRepository.Add(person);
     }
 
-    public void AddNumberToPerson()
+    public void AddNumberToPerson(AddNumberToPersonInputDto inputDto)
     {
+        var person = PersonRepository.Get(inputDto.PersonId);
+        if (person == null)
+        {
+            throw new ApplicationException($"There is no person with id={inputDto.PersonId}");
+        }
 
+        PhoneNumber phoneNumber = new(inputDto.Number);
+        person.AddPhoneNumber(phoneNumber);
+        PersonRepository.Update(person);
     }
-}
-
-public interface IPersonRepository
-{
-    void Add(Person person);
 }
