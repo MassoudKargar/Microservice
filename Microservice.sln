@@ -17,7 +17,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{679D93E3-D
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ms.Infrastructure.Data.SqlServer", "src\Infrastructure\Data\Ms.Infrastructure.Data.SqlServer\Ms.Infrastructure.Data.SqlServer.csproj", "{DD83E353-7F5C-4125-A80A-8F9426EA4E0A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ms.Endpoints.Api", "src\Endpoints\Ms.Endpoints.Api\Ms.Endpoints.Api.csproj", "{C6875AF6-4828-424E-A153-C629FB690858}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ms.Endpoints.Api", "src\Endpoints\Ms.Endpoints.Api\Ms.Endpoints.Api.csproj", "{C6875AF6-4828-424E-A153-C629FB690858}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Framework", "Framework", "{0B5141DD-FEC6-4AC1-952D-775362A8F692}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ms.Framework.ValueObject", "src\Framework\Ms.Framework.ValueObject\Ms.Framework.ValueObject.csproj", "{41978102-1483-4439-A448-6D2B729D1EAD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,6 +45,10 @@ Global
 		{C6875AF6-4828-424E-A153-C629FB690858}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C6875AF6-4828-424E-A153-C629FB690858}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C6875AF6-4828-424E-A153-C629FB690858}.Release|Any CPU.Build.0 = Release|Any CPU
+		{41978102-1483-4439-A448-6D2B729D1EAD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{41978102-1483-4439-A448-6D2B729D1EAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{41978102-1483-4439-A448-6D2B729D1EAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{41978102-1483-4439-A448-6D2B729D1EAD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -51,6 +59,7 @@ Global
 		{679D93E3-DD7C-4B27-9557-3A82D8118F47} = {47BC002D-0194-4132-8B30-EE4D1D4F4C35}
 		{DD83E353-7F5C-4125-A80A-8F9426EA4E0A} = {679D93E3-DD7C-4B27-9557-3A82D8118F47}
 		{C6875AF6-4828-424E-A153-C629FB690858} = {F774D3AE-63D8-4EAA-9149-5AD50F1F3C4D}
+		{41978102-1483-4439-A448-6D2B729D1EAD} = {0B5141DD-FEC6-4AC1-952D-775362A8F692}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {28EC57B7-6CF9-4171-9EC2-091ADFE2998B}
