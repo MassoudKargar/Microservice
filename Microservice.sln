@@ -17,8 +17,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ms.Framework.ValueObject", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ms.Framework.Entity", "src\Framework\Ms.Framework.Entity\Ms.Framework.Entity.csproj", "{DA204B65-37DA-42EE-B4AC-F2434BD9AFAC}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "09.DomainEvent", "09.DomainEvent", "{3C7E708C-59CB-4B63-B387-08A82BDD2328}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "07. Application Architecture", "07. Application Architecture", "{5140F38C-8CA1-4F5F-AB83-F2DC3FA59267}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ms.Core.Domain", "07. Application Architecture\1.Core\Ms.Core.Domain\Ms.Core.Domain.csproj", "{D9D8EDBA-42C9-47B7-A14B-E99EDC641B22}"
@@ -28,10 +26,6 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ms.Infrastructure.Data.SqlServer", "07. Application Architecture\2.Infrastructure\Data\Ms.Infrastructure.Data.SqlServer\Ms.Infrastructure.Data.SqlServer.csproj", "{BA987A72-11C7-48F2-B8AC-CA1C8B764E44}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ms.Endpoints.Api", "07. Application Architecture\3.Endpoints\Ms.Endpoints.Api\Ms.Endpoints.Api.csproj", "{F4213984-14C8-452B-A71E-88397B47A563}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "08. DomainModelingBuildingBlocks", "08. DomainModelingBuildingBlocks", "{40758DB8-F77C-4F8C-9790-59D0F5133D1C}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ms.DomainModelingBuildingBlocks", "08. DomainModelingBuildingBlocks\Ms.DomainModelingBuildingBlocks\Ms.DomainModelingBuildingBlocks.csproj", "{24A70CD1-20F9-4A72-AC58-15E64CD90062}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,10 +57,6 @@ Global
 		{F4213984-14C8-452B-A71E-88397B47A563}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F4213984-14C8-452B-A71E-88397B47A563}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F4213984-14C8-452B-A71E-88397B47A563}.Release|Any CPU.Build.0 = Release|Any CPU
-		{24A70CD1-20F9-4A72-AC58-15E64CD90062}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{24A70CD1-20F9-4A72-AC58-15E64CD90062}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{24A70CD1-20F9-4A72-AC58-15E64CD90062}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{24A70CD1-20F9-4A72-AC58-15E64CD90062}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -82,7 +72,6 @@ Global
 		{909FE015-53F2-4DF9-8D8D-59C1EFE0FC02} = {486608A5-B3C1-47E1-8687-E007D7848A83}
 		{BA987A72-11C7-48F2-B8AC-CA1C8B764E44} = {679D93E3-DD7C-4B27-9557-3A82D8118F47}
 		{F4213984-14C8-452B-A71E-88397B47A563} = {F774D3AE-63D8-4EAA-9149-5AD50F1F3C4D}
-		{24A70CD1-20F9-4A72-AC58-15E64CD90062} = {40758DB8-F77C-4F8C-9790-59D0F5133D1C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {28EC57B7-6CF9-4171-9EC2-091ADFE2998B}
