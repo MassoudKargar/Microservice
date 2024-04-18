@@ -1,4 +1,4 @@
-﻿ using DomainModelingBuildingBlocks.Entities;
+﻿using DomainModelingBuildingBlocks.Entities;
 
 var person = new Person(1,"alireza", "oroumand");
 
