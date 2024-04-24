@@ -20,6 +20,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Ms.DomainEventsSamples.Core.ApplicationServices\Ms.DomainEventsSamples.Core.ApplicationServices.csproj" />
     <ProjectReference Include="..\Ms.DomainEventsSamples.Infra.Dal\Ms.DomainEventsSamples.Infra.Dal.csproj" />
   </ItemGroup>
 
