@@ -1,10 +1,11 @@
-﻿using System.Security.Cryptography.X509Certificates;
+﻿using Ms.Aggregates.Framework;
+
+using System.Security.Cryptography.X509Certificates;
 
 namespace Ms.Aggregates.Introductions.AddressBooks;
 
-public class AddressBook
+public class AddressBook : AggregateRoot
 {
-    public int Id { get; set; }
     public int CustomerId { get; set; }
     private readonly List<AddressLine> _addressLines = new();
     public IReadOnlyList<AddressLine> AddressLines => _addressLines;

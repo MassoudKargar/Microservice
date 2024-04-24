@@ -1,6 +1,8 @@
-﻿namespace Ms.Aggregates.Introductions.Orders;
+﻿using Ms.Aggregates.Framework;
 
-public class OrderLine
+namespace Ms.Aggregates.Introductions.Orders;
+
+public class OrderLine: Entity
 {
     public int Price { get; private set; }
     public int LineId { get; private set; }

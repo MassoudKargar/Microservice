@@ -1,8 +1,9 @@
-﻿namespace Ms.Aggregates.Introductions.AddressBooks;
+﻿using Ms.Aggregates.Framework;
 
-public class AddressLine
+namespace Ms.Aggregates.Introductions.AddressBooks;
+
+public class AddressLine : Entity
 {
-    public int Id { get; set; }
     public int AddressBookId { get; set; }
     public string City { get; set; }
     public string Address { get; set; }
