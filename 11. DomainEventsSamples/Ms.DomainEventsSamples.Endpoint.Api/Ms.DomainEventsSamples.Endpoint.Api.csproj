@@ -7,6 +7,11 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.4">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.4" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.4">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
@@ -15,8 +20,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\Core\Ms.Core.ApplicationServices\Ms.Core.ApplicationServices.csproj" />
-    <ProjectReference Include="..\..\Infrastructure\Data\Ms.Infrastructure.Data.SqlServer\Ms.Infrastructure.Data.SqlServer.csproj" />
+    <ProjectReference Include="..\Ms.DomainEventsSamples.Infra.Dal\Ms.DomainEventsSamples.Infra.Dal.csproj" />
   </ItemGroup>
 
 </Project>

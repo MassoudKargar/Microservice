@@ -11,8 +11,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\..\Core\Ms.Core.ApplicationServices\Ms.Core.ApplicationServices.csproj" />
-    <ProjectReference Include="..\..\..\Core\Ms.Core.Domain\Ms.Core.Domain.csproj" />
+    <ProjectReference Include="..\..\..\1.Core\Ms.Core.ApplicationServices\Ms.Core.ApplicationServices.csproj" />
+    <ProjectReference Include="..\..\..\1.Core\Ms.Core.Domain\Ms.Core.Domain.csproj" />
   </ItemGroup>
+
 
 </Project>
