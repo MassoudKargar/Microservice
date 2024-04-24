@@ -1,6 +1,8 @@
-﻿namespace Ms.Aggregates.Introductions.Products;
+﻿using Ms.Aggregates.Framework;
 
-public class Discount
+namespace Ms.Aggregates.Introductions.Products;
+
+public class Discount:Entity
 {
     public int DiscountBalue { get; set; }
 }

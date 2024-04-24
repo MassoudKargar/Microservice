@@ -1,6 +1,8 @@
-﻿namespace Ms.Aggregates.Introductions.Products;
+﻿using Ms.Aggregates.Framework;
 
-public class Product
+namespace Ms.Aggregates.Introductions.Products;
+
+public class Product : AggregateRoot
 {
     public string Name { get; set; }
     public Discount Discount { get; set; }

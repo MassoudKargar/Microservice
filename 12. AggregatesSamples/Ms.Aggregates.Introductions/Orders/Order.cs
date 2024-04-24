@@ -1,6 +1,8 @@
-﻿namespace Ms.Aggregates.Introductions.Orders;
+﻿using Ms.Aggregates.Framework;
 
-public class Order
+namespace Ms.Aggregates.Introductions.Orders;
+
+public class Order: AggregateRoot
 {
     public Order(int addressLineId, DateTime orderDate, List<OrderLine> orderLines)
     {
