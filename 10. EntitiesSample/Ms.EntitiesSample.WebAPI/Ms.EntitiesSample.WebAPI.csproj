@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Ms.EntitiesSample.IdGenerators.Contract\Ms.EntitiesSample.IdGenerators.Contract.csproj" />
+    <ProjectReference Include="..\Ms.EntitiesSample.IdGenerators.Snowflakes\Ms.EntitiesSample.IdGenerators.Snowflakes.csproj" />
+    <ProjectReference Include="..\Ms.EntitiesSample.IdGenerators.SqlSequence\Ms.EntitiesSample.IdGenerators.SqlSequence.csproj" />
+    <ProjectReference Include="..\Ms.EntitiesSample.IdGenerators.StaticClass\Ms.EntitiesSample.IdGenerators.StaticClass.csproj" />
+  </ItemGroup>
+
+</Project>
