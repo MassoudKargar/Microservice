@@ -7,7 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="8.0.1" />
+    <ProjectReference Include="..\Ms.DomainEventsSamples.Infra.Dal\Ms.DomainEventsSamples.Infra.Dal.csproj" />
   </ItemGroup>
 
 </Project>
