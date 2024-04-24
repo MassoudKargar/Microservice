@@ -95,6 +95,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Validations", "Validations"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ms.EntitiesSample.Validations", "10. EntitiesSample\Ms.EntitiesSample.Validations\Ms.EntitiesSample.Validations.csproj", "{31F7DC9E-557A-45EB-BDE1-116CAE72972B}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "08. DomainModelingBuildingBlocks", "08. DomainModelingBuildingBlocks", "{3698E905-7E4F-4D4B-84CA-5CED837EB21B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ms.DomainModelingBuildingBlocks", "08. DomainModelingBuildingBlocks\Ms.DomainModelingBuildingBlocks\Ms.DomainModelingBuildingBlocks.csproj", "{66DE7155-C394-45ED-9C9A-2151C8E70469}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -201,6 +205,10 @@ Global
 		{31F7DC9E-557A-45EB-BDE1-116CAE72972B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{31F7DC9E-557A-45EB-BDE1-116CAE72972B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{31F7DC9E-557A-45EB-BDE1-116CAE72972B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{66DE7155-C394-45ED-9C9A-2151C8E70469}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66DE7155-C394-45ED-9C9A-2151C8E70469}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66DE7155-C394-45ED-9C9A-2151C8E70469}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66DE7155-C394-45ED-9C9A-2151C8E70469}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -247,6 +255,7 @@ Global
 		{2CF38795-BCBD-44B7-B421-ED968826385C} = {D7C5091D-4BE5-4E3E-8FB5-6802336794B2}
 		{3B778CBE-9318-4EE1-B9D7-952F6491CE3F} = {C93CC83B-D488-4051-B7E2-D8553BB128BE}
 		{31F7DC9E-557A-45EB-BDE1-116CAE72972B} = {3B778CBE-9318-4EE1-B9D7-952F6491CE3F}
+		{66DE7155-C394-45ED-9C9A-2151C8E70469} = {3698E905-7E4F-4D4B-84CA-5CED837EB21B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {28EC57B7-6CF9-4171-9EC2-091ADFE2998B}
