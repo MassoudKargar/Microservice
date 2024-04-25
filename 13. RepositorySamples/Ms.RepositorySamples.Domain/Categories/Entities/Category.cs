@@ -15,4 +15,9 @@ public class Category : AggregateRoot
 
     public string Title { get; private set; }
 
+    public void SetName(string title)
+    {
+        Title = title;
+        AddEvent(new NameChanged(Id,title));
+    }
 }

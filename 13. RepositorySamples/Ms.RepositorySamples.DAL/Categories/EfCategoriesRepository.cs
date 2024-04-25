@@ -9,6 +9,5 @@ public class EfCategoriesRepository(RepSampleDbContext dbContext) : BaseEfReposi
     public void Add(Category category)
     {
         _dbContext.Categories.Add(category);
-        _dbContext.SaveChanges();
     }
 }
