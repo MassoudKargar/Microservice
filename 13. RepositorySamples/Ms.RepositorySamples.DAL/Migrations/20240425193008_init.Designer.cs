@@ -11,7 +11,7 @@ using Ms.RepositorySamples.DAL;
 
 namespace Ms.RepositorySamples.DAL.Migrations
 {
-    [DbContext(typeof(ResSampleDbContext))]
+    [DbContext(typeof(RepSampleDbContext))]
     [Migration("20240425193008_init")]
     partial class init
     {

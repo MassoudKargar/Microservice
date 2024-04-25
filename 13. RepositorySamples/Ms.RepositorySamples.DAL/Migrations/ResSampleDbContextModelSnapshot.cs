@@ -10,7 +10,7 @@ using Ms.RepositorySamples.DAL;
 
 namespace Ms.RepositorySamples.DAL.Migrations
 {
-    [DbContext(typeof(ResSampleDbContext))]
+    [DbContext(typeof(RepSampleDbContext))]
     partial class ResSampleDbContextModelSnapshot : ModelSnapshot
     {
         protected override void BuildModel(ModelBuilder modelBuilder)

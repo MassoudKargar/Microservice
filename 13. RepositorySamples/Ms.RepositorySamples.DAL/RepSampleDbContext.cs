@@ -5,9 +5,9 @@ using Ms.RepositorySamples.Domain.Products.Entities;
 
 namespace Ms.RepositorySamples.DAL;
 
-public class ResSampleDbContext:BaseDbContext
+public class RepSampleDbContext:BaseDbContext
 {
-    public ResSampleDbContext(DbContextOptions<ResSampleDbContext> options) : base(options)
+    public RepSampleDbContext(DbContextOptions<RepSampleDbContext> options) : base(options)
     {
     }
 

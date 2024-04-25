@@ -1,4 +1,4 @@
-namespace Ms.ReposirorySample.Api
+namespace Ms.RepositorySample.Api
 {
     public class WeatherForecast
     {
