@@ -1,4 +1,7 @@
-﻿using Ms.Aggregates.Framework;
+﻿
+
+using Ms.RepositorySample.Framework;
+using Ms.RepositorySamples.Domain.Categories.Events;
 
 namespace Ms.RepositorySamples.Domain.Categories.Entities;
 
