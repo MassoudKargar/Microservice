@@ -1,0 +1,6 @@
+@Ms.ReposirorySample.Api_HostAddress = http://localhost:5211
+
+GET {{Ms.ReposirorySample.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
