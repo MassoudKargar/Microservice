@@ -1,4 +1,6 @@
-﻿namespace Ms.EventSourcingSample.Framework;
+﻿using System.Reflection;
+
+namespace Ms.EventSourcingSample.Framework;
 
 public class AggregateRoot : Entity
 {
@@ -18,7 +20,7 @@ public class AggregateRoot : Entity
 
     public AggregateRoot()
     {
-        
+
     }
     public AggregateRoot(IReadOnlyList<IDomainEvent> domainEvents)
     {
@@ -34,7 +36,13 @@ public class AggregateRoot : Entity
         }
 
     }
-    private void Mutate(IDomainEvent @event) => ((dynamic)this).On((dynamic)@event);
+    private void Mutate(IDomainEvent @event)
+    {
+        //((dynamic)this).On((dynamic)@event);
+        var onMethod = this.GetType()
+            .GetMethod("On", BindingFlags.Instance | BindingFlags.NonPublic, [@event.GetType()]);
+        onMethod.Invoke(this, [@event]);
+    }
 
     public void ClearEvent()
     {

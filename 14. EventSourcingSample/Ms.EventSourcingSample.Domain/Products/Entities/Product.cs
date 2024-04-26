@@ -28,7 +28,7 @@ public class Product : AggregateRoot
         Apply(new NameChanged(Id, newName));
     }
 
-    public void On(ProductCreated productCreated)
+    private void On(ProductCreated productCreated)
     {
         Id = productCreated.Id;
         Name = productCreated.Name;
@@ -36,12 +36,12 @@ public class Product : AggregateRoot
         Price = productCreated.Price;
     }
 
-    public void On(PriceChanged priceChanged)
+    private void On(PriceChanged priceChanged)
     {
         Price = priceChanged.Price;
     }
 
-    public void On(NameChanged nameChanged)
+    private void On(NameChanged nameChanged)
     {
         Name = nameChanged.Name;
     }
