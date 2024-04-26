@@ -26,7 +26,7 @@ public class SqlEventStore : IEventStore
     };
     private readonly IDbConnection _db = new SqlConnection(
         "Server=.; Initial Catalog=Microservice_EventSourcing; User Id=masoud; Password=M@$$0ud1001;Encrypt=False;Trust Server Certificate=False;");
-    public void Save(string aggregateTypeName, long id,int currentVersion, IReadOnlyList<IDomainEvent> domainEvents)
+    public void Save(string aggregateTypeName, long id, int currentVersion, IReadOnlyList<IDomainEvent> domainEvents)
     {
         string insertCommand = """
                                INSERT INTO [dbo].[EventStore]
