@@ -141,6 +141,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ms.CQRSSamples.API", "15. C
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ms.EventSourcingSample.Framework", "14. EventSourcingSample\Ms.EventSourcingSample.Framework\Ms.EventSourcingSample.Framework.csproj", "{18150D1A-DDA2-462F-BE86-DE758BB4117F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ms.CQRSSamples.ApplicationService", "15. CQRSSamples\Ms.CQRSSamples.ApplicationService\Ms.CQRSSamples.ApplicationService.csproj", "{B415CA8F-7D59-4CB6-B714-548FD3B6B23B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -319,6 +321,10 @@ Global
 		{18150D1A-DDA2-462F-BE86-DE758BB4117F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{18150D1A-DDA2-462F-BE86-DE758BB4117F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{18150D1A-DDA2-462F-BE86-DE758BB4117F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B415CA8F-7D59-4CB6-B714-548FD3B6B23B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B415CA8F-7D59-4CB6-B714-548FD3B6B23B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B415CA8F-7D59-4CB6-B714-548FD3B6B23B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B415CA8F-7D59-4CB6-B714-548FD3B6B23B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -383,6 +389,7 @@ Global
 		{5B4837C7-D894-454B-A8D4-C6B8B9770861} = {9E7AAFF8-BD39-4257-9956-A63755117E21}
 		{5A4B5537-FF9D-485D-889D-42191EB8E839} = {9E7AAFF8-BD39-4257-9956-A63755117E21}
 		{18150D1A-DDA2-462F-BE86-DE758BB4117F} = {C7B58262-F855-4501-BAA0-081620B503B7}
+		{B415CA8F-7D59-4CB6-B714-548FD3B6B23B} = {9E7AAFF8-BD39-4257-9956-A63755117E21}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {28EC57B7-6CF9-4171-9EC2-091ADFE2998B}
