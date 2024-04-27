@@ -13,4 +13,9 @@
 			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
 		</PackageReference>
 	</ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Ms.CQRSSamples.Domain\Ms.CQRSSamples.Domain.csproj" />
+    <ProjectReference Include="..\Ms.CQRSSamples.Framework\Ms.CQRSSamples.Framework.csproj" />
+  </ItemGroup>
+
 </Project>

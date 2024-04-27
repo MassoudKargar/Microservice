@@ -1,0 +1,6 @@
+@Ms.EventSourcingSample.Endpoint_HostAddress = http://localhost:5285
+
+GET {{Ms.EventSourcingSample.Endpoint_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
