@@ -6,10 +6,3 @@ public interface IRepository<TAggregate> where TAggregate : AggregateRoot
     void SaveChanges();
     Task SaveChangesAsync();
 }
-
-public interface IUnitOfWork
-{
-    void BeginTransaction();
-    void CommitTransaction();
-    void RollbackTransaction();
-}
