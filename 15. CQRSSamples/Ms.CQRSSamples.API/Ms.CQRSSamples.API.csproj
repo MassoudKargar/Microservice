@@ -16,6 +16,7 @@
 		<PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
 	</ItemGroup>
 	<ItemGroup>
+		<ProjectReference Include="..\Ms.CQRSSamples.ApplicationService\Ms.CQRSSamples.ApplicationService.csproj" />
 		<ProjectReference Include="..\Ms.CQRSSamples.DAL\Ms.CQRSSamples.DAL.csproj" />
 	</ItemGroup>
 

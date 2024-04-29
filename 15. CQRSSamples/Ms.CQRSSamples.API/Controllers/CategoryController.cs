@@ -2,24 +2,20 @@
 
 [Route("api/[controller]")]
 [ApiController]
-public class CategoryController(ICategoryRepository categoryRepository) : ControllerBase
+public class CategoryController(CategoryServices categoryServices) : ControllerBase
 {
-    private ICategoryRepository CategoryRepository { get; } = categoryRepository;
+    private CategoryServices CategoryServices { get; } = categoryServices;
 
     [HttpPost]
     public async Task<IActionResult> Post(string categoryName)
     {
-        var category = new Category(categoryName);
-        CategoryRepository.Add(category);
-        await CategoryRepository.SaveChangesAsync();
+        await CategoryServices.CreateCategory(categoryName);
         return Ok();
     }
     [HttpPut]
     public async Task<IActionResult> Post(long categoryId, string categoryName)
     {
-        var category = CategoryRepository.Get(categoryId);
-        category.SetName(categoryName);
-        await CategoryRepository.SaveChangesAsync();
+        await CategoryServices.UpdateCategory(categoryId, categoryName);
         return Ok();
     }
 }
