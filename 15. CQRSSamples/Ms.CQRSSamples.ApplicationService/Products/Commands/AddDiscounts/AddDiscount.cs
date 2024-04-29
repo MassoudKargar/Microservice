@@ -7,14 +7,14 @@ public class AddDiscount : ICommand
     public int Value { get; set; }
 }
 
-public class AddDiscountHandler(IProductRepository productRepository) : ICommandHandler<AddDiscount>
+public class AddDiscountHandler(IProductCommandRepository productCommandRepository) : ICommandHandler<AddDiscount>
 {
-    private IProductRepository ProductRepository { get; set; } = productRepository;
+    private IProductCommandRepository ProductCommandRepository { get; set; } = productCommandRepository;
 
     public async Task Handle(AddDiscount command)
     {
-        var p = ProductRepository.Get(command.Id);
+        var p = ProductCommandRepository.Get(command.Id);
         p.AddDiscount(command.Title, command.Value);
-        await ProductRepository.SaveChangesAsync();
+        await ProductCommandRepository.SaveChangesAsync();
     }
 }

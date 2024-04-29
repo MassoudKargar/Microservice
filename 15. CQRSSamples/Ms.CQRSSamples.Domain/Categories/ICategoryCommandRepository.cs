@@ -1,6 +1,6 @@
 ﻿namespace Ms.CQRSSamples.Domain.Categories;
 
-public interface ICategoryRepository : IRepository<Category>
+public interface ICategoryCommandRepository : ICommandRepository<Category>
 {
     public void Add(Category category);
 }

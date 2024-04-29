@@ -1,8 +1,8 @@
 ﻿namespace Ms.CQRSSamples.ApplicationService.Products;
 
-public class ProductServices(IProductRepository productRepository)
+public class ProductServices(IProductCommandRepository productCommandRepository)
 {
-    private readonly IProductRepository _productRepository = productRepository;
+    private readonly IProductCommandRepository _productCommandRepository = productCommandRepository;
 
     public async Task Handle(CreateProduct dto)
     {

@@ -6,13 +6,13 @@ public class UpdateCategory : ICommand
     public string CategoryName { get; set; } = string.Empty;
 }
 
-public class UpdateCategoryHandler(ICategoryRepository categoryRepository) : ICommandHandler<UpdateCategory>
+public class UpdateCategoryHandler(ICategoryCommandRepository categoryCommandRepository) : ICommandHandler<UpdateCategory>
 {
-    private ICategoryRepository CategoryRepository { get; } = categoryRepository;
+    private ICategoryCommandRepository CategoryCommandRepository { get; } = categoryCommandRepository;
     public async Task Handle(UpdateCategory command)
     {
-        var category = CategoryRepository.Get(command.CategoryId);
+        var category = CategoryCommandRepository.Get(command.CategoryId);
         category.SetName(command.CategoryName);
-        await CategoryRepository.SaveChangesAsync();
+        await CategoryCommandRepository.SaveChangesAsync();
     }
 }

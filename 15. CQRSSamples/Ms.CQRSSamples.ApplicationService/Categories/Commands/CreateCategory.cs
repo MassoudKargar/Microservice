@@ -5,13 +5,13 @@ public class CreateCategory : ICommand
     public string CategoryName { get; set; } = string.Empty;
 }
 
-public class CreateCategoryHandler(ICategoryRepository  categoryRepository) : ICommandHandler<CreateCategory>
+public class CreateCategoryHandler(ICategoryCommandRepository  categoryCommandRepository) : ICommandHandler<CreateCategory>
 {
-    private ICategoryRepository CategoryRepository { get; } = categoryRepository;
+    private ICategoryCommandRepository CategoryCommandRepository { get; } = categoryCommandRepository;
     public async Task Handle(CreateCategory command)
     {
         var category = new Category(command.CategoryName);
-        CategoryRepository.Add(category);
-        await CategoryRepository.SaveChangesAsync();
+        CategoryCommandRepository.Add(category);
+        await CategoryCommandRepository.SaveChangesAsync();
     }
 }

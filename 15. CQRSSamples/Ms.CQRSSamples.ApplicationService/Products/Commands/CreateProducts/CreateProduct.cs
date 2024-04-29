@@ -8,15 +8,15 @@ public class CreateProduct : ICommand
     public int CategoryId { get; set; }
 }
 
-public class CreateProductHandler(IProductRepository productRepository) : ICommandHandler<CreateProduct>
+public class CreateProductHandler(IProductCommandRepository productCommandRepository) : ICommandHandler<CreateProduct>
 {
-    private IProductRepository ProductRepository { get; set; } = productRepository;
+    private IProductCommandRepository ProductCommandRepository { get; set; } = productCommandRepository;
 
     public async Task Handle(CreateProduct command)
     {
 
         Product p = new(command.Title, command.Description, command.Price, command.CategoryId);
-        ProductRepository.Add(p);
-        await ProductRepository.SaveChangesAsync();
+        ProductCommandRepository.Add(p);
+        await ProductCommandRepository.SaveChangesAsync();
     }
 }
