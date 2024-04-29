@@ -2,6 +2,8 @@
 
 global using Microsoft.AspNetCore.Mvc;
 global using Microsoft.EntityFrameworkCore;
+global using Ms.CQRSSamples.ApplicationService.Categories;
+global using Ms.CQRSSamples.ApplicationService.Products;
 global using Ms.CQRSSamples.DAL;
 global using Ms.CQRSSamples.DAL.Categories;
 global using Ms.CQRSSamples.DAL.Common;
