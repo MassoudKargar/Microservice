@@ -6,9 +6,10 @@ builder.Services.AddDbContext<RepSampleDbContext>(c => c.UseSqlServer("Server=.;
 builder.Services.AddScoped<IRepositorySampleDomainUnitOfWork, EfRepositorySampleDomainUnitOfWork>();
 builder.Services.AddScoped<ICategoryRepository, EfCategoriesRepository>();
 builder.Services.AddScoped<IProductRepository, EfProductsRepository>();
-builder.Services.AddScoped<CategoryServices>();
-builder.Services.AddScoped<ProductServices>();
-
+builder.Services.AddScoped<CreateCategoryHandler>();
+builder.Services.AddScoped<CreateCategoryHandler>();
+builder.Services.AddScoped<AddDiscountHandler>();
+builder.Services.AddScoped<CreateProductHandler>();
 
 var app = builder.Build();
 
