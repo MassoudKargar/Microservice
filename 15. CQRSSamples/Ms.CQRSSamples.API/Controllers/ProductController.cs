@@ -2,21 +2,20 @@
 
 [Route("api/[controller]")]
 [ApiController]
-public class ProductController(ProductServices productServices) : ControllerBase
+public class ProductController : ControllerBase
 {
-    private ProductServices ProductServices { get; } = productServices;
 
     [HttpPost]
-    public async Task<IActionResult> Post(string title, string description, int price, int categoryId)
+    public async Task<IActionResult> Post([FromServices] CreateProductHandler handler,CreateProduct command)
     {
-        await ProductServices.CreateProduct(title, description, price, categoryId);
+        await handler.Handle(command);
         return Ok();
     }
 
     [HttpPut]
-    public async Task<IActionResult> Put(long id, string title, int value)
+    public async Task<IActionResult> Put(AddDiscountHandler handler,AddDiscount command)
     {
-        await ProductServices.UpdateProduct(id, title, value);
+        await handler.Handle(command);
         return Ok();
     }
 }

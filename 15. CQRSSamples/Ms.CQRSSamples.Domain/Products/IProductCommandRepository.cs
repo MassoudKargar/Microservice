@@ -1,6 +1,6 @@
 ﻿namespace Ms.CQRSSamples.Domain.Products;
 
-public interface IProductRepository : IRepository<Product>
+public interface IProductCommandRepository : ICommandRepository<Product>
 {
     void Add(Product product);
 }

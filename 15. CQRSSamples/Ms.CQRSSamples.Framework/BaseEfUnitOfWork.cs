@@ -1,26 +1,26 @@
 ﻿namespace Ms.CQRSSamples.Framework;
 
 public abstract class BaseEfUnitOfWork<TDbContext> : IUnitOfWork
-    where TDbContext : BaseDbContext
+    where TDbContext : BaseCommandDbContext
 {
-    private readonly TDbContext _dbContext;
+    private readonly TDbContext _commandDbContext;
 
-    public BaseEfUnitOfWork(TDbContext dbContext)
+    public BaseEfUnitOfWork(TDbContext commandDbContext)
     {
-        _dbContext = dbContext;
+        _commandDbContext = commandDbContext;
     }
     public void BeginTransaction()
     {
-        _dbContext.Database.BeginTransaction();
+        _commandDbContext.Database.BeginTransaction();
     }
 
     public void CommitTransaction()
     {
-        _dbContext.Database.CommitTransaction();
+        _commandDbContext.Database.CommitTransaction();
     }
 
     public void RollbackTransaction()
     {
-        _dbContext.Database.RollbackTransaction();
+        _commandDbContext.Database.RollbackTransaction();
     }
 }

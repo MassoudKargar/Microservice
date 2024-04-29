@@ -1,26 +1,13 @@
-﻿using Ms.CQRSSamples.Domain.Categories;
-using Ms.CQRSSamples.Domain.Categories.Entities;
+﻿namespace Ms.CQRSSamples.ApplicationService.Categories;
 
-namespace Ms.CQRSSamples.ApplicationService.Categories;
-
-public class CategoryServices(ICategoryRepository categoryRepository)
+public class CategoryServices(ICategoryCommandRepository categoryCommandRepository)
 {
-    private ICategoryRepository CategoryRepository { get; } = categoryRepository;
 
-    public async Task CreateCategory(string categoryName)
+    public async Task Handle(CreateCategory dto)
     {
-        var category = new Category(categoryName);
-        CategoryRepository.Add(category);
-        await CategoryRepository.SaveChangesAsync();
-
     }
 
-    public async Task UpdateCategory(long categoryId, string categoryName)
+    public async Task Handle(UpdateCategory dto)
     {
-        var category = CategoryRepository.Get(categoryId);
-        category.SetName(categoryName);
-        await CategoryRepository.SaveChangesAsync();
-
     }
-
 }

@@ -1,11 +1,7 @@
 ﻿namespace Ms.CQRSSamples.Framework;
 
-public class BaseDbContext : DbContext
+public class BaseCommandDbContext(DbContextOptions options) : DbContext(options)
 {
-    public BaseDbContext(DbContextOptions options) : base(options)
-    {
-
-    }
     public DbSet<OutBoxEventItem> OutBoxEventItems { get; set; }
 
 
