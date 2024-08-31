@@ -1,7 +1,7 @@
 ﻿namespace Ms.WhatIsUnitTestingSamples.Domain;
 public class Store : IStore
 {
-    private Dictionary<Product, int> _products = new Dictionary<Product, int>();
+    private Dictionary<Product, int> _products = new();
     public void AddProduct(Product product, int count)
     {
         if (_products.ContainsKey(product))
@@ -29,10 +29,6 @@ public class Store : IStore
 
     public int Inventory(Product product)
     {
-        if (_products.ContainsKey(product))
-        {
-            return _products[product];
-        }
-        return 0;
+        return _products.ContainsKey(product) ? _products[product] : 0;
     }
 }

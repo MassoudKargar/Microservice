@@ -2,18 +2,14 @@
 
 public class Customer
 {
-    private Dictionary<Product, int> _basket = new Dictionary<Product, int>();
+    private Dictionary<Product, int> _basket = new();
 
     public bool Purchase(IStore store, Product product, int count)
     {
-        if(store.HasEnoughtInventory(product,count))
-        {
-            store.RemoveProduct(product, count);
-            AddToBasket(product,count);
-            return true;
-        }
-
-        return false;
+        if (!store.HasEnoughtInventory(product, count)) return false;
+        store.RemoveProduct(product, count);
+        AddToBasket(product,count);
+        return true;
     }
 
 
@@ -31,10 +27,6 @@ public class Customer
 
     public int Inventory(Product product)
     {
-        if (_basket.ContainsKey(product))
-        {
-            return _basket[product];
-        }
-        return 0;
+        return _basket.ContainsKey(product) ? _basket[product] : 0;
     }
 }
